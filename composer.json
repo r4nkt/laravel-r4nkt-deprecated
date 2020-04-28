@@ -1,0 +1,61 @@
+{
+    "name": "r4nkt/laravel-r4nkt",
+    "description": "Make working with R4nkt in a Laravel application even easier.",
+    "keywords": [
+        "r4nkt",
+        "gamification",
+        "leaderboard",
+        "achievements",
+        "api",
+        "sdk",
+        "laravel",
+        "laravel-r4nkt"
+    ],
+    "homepage": "https://github.com/r4nkt/laravel-r4nkt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Travis Elkins",
+            "email": "travis.elkins+github@gmail.com",
+            "homepage": "https://r4nkt.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/http": "^6.0|^7.0",
+        "illuminate/routing": "^6.0|^7.0",
+        "illuminate/support": "^6.0|^7.0",
+        "r4nkt/r4nkt-php-sdk": "^0.1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0",
+        "orchestra/testbench": "^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "R4nkt\\Laravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "R4nkt\\Laravel\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "R4nkt\\Laravel\\R4nktServiceProvider"
+            ],
+            "aliases": {
+                "R4nkt": "R4nkt\\Laravel\\Support\\Facade"
+            }
+        }
+    }
+}
