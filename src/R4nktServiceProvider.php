@@ -2,7 +2,9 @@
 
 namespace R4nkt\Laravel;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use R4nkt\Laravel\Http\Controllers\WebhookController;
 use R4nkt\PhpSdk\R4nkt;
 
 class R4nktServiceProvider extends ServiceProvider
@@ -17,6 +19,10 @@ class R4nktServiceProvider extends ServiceProvider
                 __DIR__.'/../config/r4nkt.php' => config_path('r4nkt.php'),
             ], 'config');
         }
+
+        Route::macro('r4nktWebhooks', function ($url) {
+            return Route::post($url, WebhookController::class);
+        });
     }
 
     /**
