@@ -14,4 +14,15 @@ trait IsR4nktPlayer
     {
         return Hashids::encode($this->id);
     }
+
+    /**
+     * [scopeCustomPlayerId description]
+     * @param  [type] $query          [description]
+     * @param  [type] $customPlayerId [description]
+     * @return [type]                 [description]
+     */
+    public function scopeCustomPlayerId($query, $customPlayerId)
+    {
+        $query->where('id', Hashids::decode($customPlayerId));
+    }
 }

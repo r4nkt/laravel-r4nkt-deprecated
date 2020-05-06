@@ -53,7 +53,7 @@ return [
     */
 
     'jobs' => [
-        // 'badgeEarned' => \App\Jobs\R4nktWebhooks\HandleBadgeEarned::class,
+        // 'badge-earned' => \App\Jobs\R4nktWebhooks\HandleBadgeEarned::class,
         // ...
     ],
 
