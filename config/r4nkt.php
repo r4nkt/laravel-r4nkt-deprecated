@@ -41,6 +41,35 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Custom Player ID Resolver
+    |--------------------------------------------------------------------------
+    |
+    | This class is responsible for determining the player's custom ID.
+    |
+    | This class should extend
+    | `R4nkt\Laravel\Support\CustomPlayerIdResolver\CustomPlayerIdResolver`
+    |
+    */
+
+    'custom_player_id_resolver' => \R4nkt\Laravel\Support\CustomPlayerIdResolver\HashidsCustomPlayerIdResolver::class,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Date/Time UTC Resolver
+    |--------------------------------------------------------------------------
+    |
+    | This class is responsible for resolving the date/time UTC value to a
+    | properly formatted string.
+    |
+    | This class should extend
+    | `R4nkt\Laravel\Support\DateTimeUtcResolver\DateTimeUtcResolver`
+    |
+    */
+
+    'date_time_utc_resolver' => \R4nkt\Laravel\Support\DateTimeUtcResolver\DefaultDateTimeUtcResolver::class,
+
+    /*
+    |--------------------------------------------------------------------------
     | Webhook Jobs
     |--------------------------------------------------------------------------
     |

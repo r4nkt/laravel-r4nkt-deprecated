@@ -22,5 +22,7 @@
     <php>
         <server name="R4NKT_API_TOKEN" value="<your.r4nkt.api.token>"/>
         <server name="R4NKT_GAME_ID" value="<your.r4nkt.game.id>"/>
+        <server name="DB_CONNECTION" value="sqlite"/>
+        <server name="DB_DATABASE" value=":memory:"/>
     </php>
 </phpunit>
