@@ -4,7 +4,6 @@ namespace R4nkt\Laravel\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use R4nkt\Laravel\R4nktServiceProvider;
-use Vinkla\Hashids\HashidsServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
 {
@@ -35,7 +34,6 @@ abstract class TestCase extends OrchestraTestCase
     protected function getPackageProviders($app)
     {
         return [
-            HashidsServiceProvider::class,
             R4nktServiceProvider::class,
         ];
     }

@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'custom_player_id_resolver' => \R4nkt\Laravel\Support\CustomPlayerIdResolver\HashidsCustomPlayerIdResolver::class,
+    'custom_player_id_resolver' => \R4nkt\Laravel\Support\CustomPlayerIdResolver\PrimaryKeyCustomPlayerIdResolver::class,
 
     /*
     |--------------------------------------------------------------------------
