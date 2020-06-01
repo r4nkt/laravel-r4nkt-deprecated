@@ -4,7 +4,7 @@ namespace R4nkt\Laravel\Support\DateTimeUtcResolver;
 
 use Illuminate\Support\Carbon;
 
-class DefaultDateTimeUtcResolver extends DateTimeUtcResolver
+class DefaultDateTimeUtcResolver implements DateTimeUtcResolver
 {
     public function resolve(?Carbon $dateTimeUtc): ?string
     {

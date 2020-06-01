@@ -46,7 +46,7 @@ return [
     |
     | This class is responsible for determining the player's custom ID.
     |
-    | This class should extend
+    | This class should implement
     | `R4nkt\Laravel\Support\CustomPlayerIdResolver\CustomPlayerIdResolver`
     |
     */
@@ -61,7 +61,7 @@ return [
     | This class is responsible for resolving the date/time UTC value to a
     | properly formatted string.
     |
-    | This class should extend
+    | This class should implement
     | `R4nkt\Laravel\Support\DateTimeUtcResolver\DateTimeUtcResolver`
     |
     */

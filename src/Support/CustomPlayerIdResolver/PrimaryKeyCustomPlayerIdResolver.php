@@ -4,7 +4,7 @@ namespace R4nkt\Laravel\Support\CustomPlayerIdResolver;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PrimaryKeyCustomPlayerIdResolver extends CustomPlayerIdResolver
+class PrimaryKeyCustomPlayerIdResolver implements CustomPlayerIdResolver
 {
     public function resolve(Model $player): string
     {
