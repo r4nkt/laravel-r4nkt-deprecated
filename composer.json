@@ -57,7 +57,7 @@
                 "R4nkt\\Laravel\\R4nktServiceProvider"
             ],
             "aliases": {
-                "R4nkt": "R4nkt\\Laravel\\Support\\Facade"
+                "R4nkt": "R4nkt\\Laravel\\Support\\Facades\\R4nkt"
             }
         }
     }
