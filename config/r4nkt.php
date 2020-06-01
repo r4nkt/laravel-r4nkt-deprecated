@@ -55,6 +55,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Custom Player ID Decoder
+    |--------------------------------------------------------------------------
+    |
+    | This class is responsible for decoding the player's custom ID.
+    |
+    | This class should implement
+    | `R4nkt\Laravel\Support\CustomPlayerIdDecoder\CustomPlayerIdDecoder`
+    |
+    */
+
+    'custom_player_id_decoder' => \R4nkt\Laravel\Support\CustomPlayerIdDecoder\PrimaryKeyCustomPlayerIdDecoder::class,
+
+    /*
+    |--------------------------------------------------------------------------
     | Date/Time UTC Resolver
     |--------------------------------------------------------------------------
     |

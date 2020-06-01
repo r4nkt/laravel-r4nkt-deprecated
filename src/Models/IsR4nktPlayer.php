@@ -12,6 +12,8 @@ trait IsR4nktPlayer
      */
     public function scopeCustomPlayerId($query, $customPlayerId)
     {
-        $query->where('id', Hashids::decode($customPlayerId));
+        $decoderClass = config('r4nkt.custom_player_id_decoder');
+
+        $query->where('id', (new $decoderClass)->decode($customPlayerId));
     }
 }
