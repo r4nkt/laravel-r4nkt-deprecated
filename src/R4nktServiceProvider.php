@@ -5,7 +5,7 @@ namespace R4nkt\Laravel;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use R4nkt\Laravel\Http\Controllers\WebhookController;
-use R4nkt\PhpSdk\R4nkt;
+use R4nkt\Laravel\R4nkt;
 
 class R4nktServiceProvider extends ServiceProvider
 {
