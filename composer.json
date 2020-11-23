@@ -24,7 +24,7 @@
     "require": {
         "php": "^7.2",
         "illuminate/support": "^6.0|^7.0",
-        "r4nkt/r4nkt-php-sdk": "^0.1.1",
+        "r4nkt/r4nkt-php-sdk": "^0.1.6",
         "spatie/data-transfer-object": "^2.2",
         "telkins/laravel-pending-action": "^0.3.0",
         "vinkla/hashids": "^8.1"
