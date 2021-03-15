@@ -7,11 +7,11 @@
 
 [R4nkt](https://r4nkt.com) makes achievements easy. This package makes it even easier for those building Laravel applications that want to use r4nkt.
 
-Before using this package we highly recommend reading [the documentation over at R4nkt](https://r4nkt.com/docs).
+Before using this package we highly recommend reading [the documentation over at R4nkt](https://docs.r4nkt.com).
 
 ## Documentation
 
-All package documentation can be found on the [R4nkt website](https://r4nkt.com/docs/1.0).
+All package documentation can be found on the [R4nkt website](https://docs.r4nkt.com).
 
 ## Contributing
 
